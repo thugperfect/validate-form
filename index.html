@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="form">
+
+    <form name="form" action="form.php"  onsubmit="return validate()" method="post">
+        <h1>FEEDBACK FORM</h1>
+
+        <input type="text" name="naame" id="naame" class="id" placeholder="Enter your name">
+        <div class="red" id="nn"></div>
+        <div class="opt">
+        <label class="idd" for="dept"><h4>Select your department:</h4></label>
+        <select name="department" class="idd" id="dept">
+            <option value="null">--</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">MECH</option>
+        </select>
+    </div><div class="red" id="dd"></div>
+        <input name="reggno" id="regno" class="id" placeholder="Enter your register number" type="number">
+        <div class="red" id="rr"></div>
+        <input name="feedback" type="text" id="feedback" class="id" placeholder="Feedback...">
+        <div class="red" id="ff"></div>
+        <input name="submit" class="id" type="submit">
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
